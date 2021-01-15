@@ -4,7 +4,7 @@
   "items": {
     "type": "object",
     "required": [
-      "id",
+      "idd",
       "name",
       "number",
       "balance",
@@ -28,7 +28,7 @@
       },
       "currency": {
         "type": "string",
-        "enum": ["RUR", "USD"]
+        "enum": ["RUB", "USD"]
       }
     }
   }
