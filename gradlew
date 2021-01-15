@@ -10,6 +10,18 @@
 # Resolve links: $0 may be a link
 PRG="$0"
 # Need this for relative symlinks.
+#!/usr/bin/env sh
+
+##############################################################################
+##
+##  Gradle start up script for UN*X
+##
+##############################################################################
+
+# Attempt to set APP_HOME
+# Resolve links: $0 may be a link
+PRG="$0"
+# Need this for relative symlinks.
 while [ -h "$PRG" ] ; do
     ls=`ls -ld "$PRG"`
     link=`expr "$ls" : '.*-> \(.*\)$'`
@@ -76,14 +88,12 @@ if [ -n "$JAVA_HOME" ] ; then
     fi
     if [ ! -x "$JAVACMD" ] ; then
         die "ERROR: JAVA_HOME is set to an invalid directory: $JAVA_HOME
-
 Please set the JAVA_HOME variable in your environment to match the
 location of your Java installation."
     fi
 else
     JAVACMD="java"
     which java >/dev/null 2>&1 || die "ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
-
 Please set the JAVA_HOME variable in your environment to match the
 location of your Java installation."
 fi
